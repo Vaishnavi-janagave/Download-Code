@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sohams Project:</title>
+</head>
+<style>
+    #para{
+        color: rgb(196, 255, 34);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: xx-large;
+        background-color: black;
+        margin-bottom: 90px;
+    }
+    #btn{
+        align-items: center;
+    
+        margin: 50vh ;
+        padding: 30px;
+        color: blue;
+        background-color: aqua;
+        border-radius: 12px;
+        box-sizing: border-box;
+        padding: 12px;
+        text-decoration: none;
+font-size: xx-large;
+cursor: pointer;
+    }
+    #btn:hover{
+        background-color: rgb(21, 22, 24);
+        color: yellow;
+        text-decoration: none;
+    }
+    #up{
+        color: darkorange;
+        font-size: x-large;
+        text-decoration:underline;
+    }
+
+</style>
+<body>
+    <div class="demo"></div>
+
+   
+    <p id="para">Soham's Class assignment:</p>
+    <div id="demo1"></div>
+    <!-- <button id="btn" onclick="document.getElementById('demo').innerHTML='click successfully'">Click Here for Doc:</button> -->
+<!-- <a id="pan" href="./ML2.pdf"  target="_blank" onclick="document.getElementById('hre').innerHTML=a">get pdf here</a> -->
+
+<p id="pan"></p>
+
+
+
+<!-- <button id="btn" onclick=toggle()>Get PDF Here:</button> -->
+<a id="btn" target="_blank" onclick=toggle()>get pdf here</a>
+    
+
+</body>
+<script>
+   function toggle(){
+   let login = prompt('Enter your name: ');
+    
+    if(login=="soham" || login=="Soham"){
+        window.location.replace("http://127.0.0.1:5501/ML2.pdf"); 
+
+    }
+    else{
+        alert("Invalid Login please try again.");
+        window.location.replace("http://127.0.0.1:5501/w3csoham.html");
+    }
+    document.getElementById('hre').innerHTML = login;
+
+    
+};
+
+
+</script>
+</html>
